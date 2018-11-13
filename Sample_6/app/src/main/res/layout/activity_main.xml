@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="@color/colorPrimaryDark">
+
+    <RelativeLayout
+            android:id="@+id/panelData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+        <android.support.v7.widget.CardView
+                android:id="@+id/cvInfo"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_margin="3dp"
+                card_view:cardBackgroundColor="@color/colorBlanco"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="5dp"
+                card_view:contentPadding="5dp"
+                android:foreground="?selectableItemBackground"
+                android:clickable="true">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                <TextView
+                        android:id="@+id/tvNombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="30sp"
+                        android:text="Nombre"
+                        android:gravity="center_horizontal"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"/>
+                <TextView
+                        android:id="@+id/tvDireccion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="Direccion"
+                        android:layout_marginLeft="10dp"/>
+                <TextView
+                        android:id="@+id/tvTelefono"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="Telefono"
+                        android:layout_marginLeft="10dp"/>
+                <TextView
+                        android:id="@+id/tvPaginaWeb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="Pagina web"
+                        android:layout_marginLeft="10dp"/>
+                <TextView
+                        android:id="@+id/tvCoordenadas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="Coordenadas"
+                        android:layout_marginLeft="10dp"/>
+                <RatingBar
+                        android:id="@+id/rbValoracion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:stepSize="1.0"
+                        android:rating="2.0"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="30dp"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/panelTemp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF"
+            android:visibility="visible">
+
+        <ImageView
+                android:id="@+id/ivImagen"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_cloud"
+                android:layout_centerInParent="true"/>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Realice una búsqueda"
+                android:layout_below="@id/ivImagen"
+                android:gravity="center_horizontal"
+                android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

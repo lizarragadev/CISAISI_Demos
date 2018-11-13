@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/tvTextoUno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Texto 1"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#fff"/>
+    <TextView
+        android:id="@+id/tvTextoDos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Texto 2"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="50dp"
+       android:gravity="center_vertical">
+       <EditText
+           android:id="@+id/etCajaTexto"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="3.5"/>
+       <Button
+           android:id="@+id/btnRespuesta"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="2"
+           android:text="Respuesta"
+           android:layout_marginLeft="10dp"/>
+   </LinearLayout>
+
+</LinearLayout>
